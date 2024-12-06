@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>10s Happy face challenge</title>
+
+
+</head>
+
+<body>
+
+    <div id="cameraArea">
+        <div style="font-size: 40px; font-weight: bold;">10 sec Happy Face Challenge</div>
+        <video id="camera" width="640" height="480" playsinline muted autoplay></video>
+        <canvas id="canvas"></canvas>
+        <button id="startButton">Let's smile!!</button>
+    </div>
+
+    <div id="lineChartContainer">
+        <canvas id="lineChart"></canvas>
+    </div>
+    <div id="averageScoreBox" class="hidden">Average: 0%</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/happyface.js"></script>
+</body>
+
+</html>

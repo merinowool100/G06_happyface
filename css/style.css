@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    font-family: "Varela Round", sans-serif;
+}
+#cameraArea {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+}
+
+#camera {
+    transform: scaleX(-1); /* 左右反転 */
+    width: 100%;
+    height: auto;
+}
+
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scoreBox {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#lineChartContainer {
+    width: 640px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+#averageScoreBox {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
